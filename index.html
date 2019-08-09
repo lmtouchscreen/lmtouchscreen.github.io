@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<html>
+    <input type="button" value="Yellow" onclick="return change(this);" class="myButton" />
+
+    <script type="text/javascript">
+    function change( el )
+    {
+        if ( el.value === "Yellow" ) {
+            el.value = "Black";
+            document.body.style.backgroundColor = 'yellow';
+        }
+        else {
+            el.value = "Yellow";
+            document.body.style.backgroundColor = 'black';
+        }
+    }
+    </script>
+</html>
